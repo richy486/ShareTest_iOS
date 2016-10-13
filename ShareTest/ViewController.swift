@@ -56,9 +56,6 @@ class ViewController: UIViewController {
             }
         }
         
-//        let activityViewController = UIActivityViewController(activityItems: shareContent, applicationActivities: nil)
-//        presentViewController(activityViewController, animated: true, completion: {})
-        
         if shareContent.count > 0 {
         
             let activityViewController = UIActivityViewController(activityItems: shareContent, applicationActivities: nil)
@@ -66,11 +63,23 @@ class ViewController: UIViewController {
                 // ...
             }
         } else {
-            let alert = UIAlertController(title: "error", message: "not sharing anything", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "Not sharing anything", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(okAction)
             present(alert, animated: true)
         }
         
     }
 
+    @IBAction func touchUpIn_fillButton(_ sender: AnyObject) {
+        textTextField.text = "Mario!"
+        urlTextField.text = "http://www.nintendo.com/"
+        imageSwitch.isOn = true
+    }
+    @IBAction func touchUpIn_clearButton(_ sender: AnyObject) {
+        textTextField.text = ""
+        urlTextField.text = ""
+        imageSwitch.isOn = false
+    }
 }
 

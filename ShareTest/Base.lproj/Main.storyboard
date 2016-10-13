@@ -52,9 +52,27 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="ZOc-ks-1U5"/>
                                 </constraints>
-                                <state key="normal" title="Share"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="touchUpIn_shareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NxE-Iy-RVN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glu-3h-VBV">
+                                <frame key="frameInset" minX="164" minY="264" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fill"/>
+                                <connections>
+                                    <action selector="touchUpIn_fillButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t8B-YB-C3z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNV-y6-68z">
+                                <frame key="frameInset" minX="313" minY="264" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="touchUpIn_clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VvK-cG-5hi"/>
                                 </connections>
                             </button>
                         </subviews>
